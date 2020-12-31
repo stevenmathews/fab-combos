@@ -7,47 +7,47 @@ const arrow = (
   </span>
 )
 
+const noArrow = (
+  <span class="icon is-large" style={{width: '2em'}}>
+    <i class="fa-3x"></i>
+  </span>
+)
+
+function image (alt, version) {
+  return (
+    <Image
+    src={`https://storage.googleapis.com/fabmaster/media/images/${version}.width-450.png`}
+    alt={alt}
+    width={446}
+    height={624}
+    />
+  )
+}
+
 const headCombo = (
   <div className='section'>
   <div className='container'>
     <div className='columns is-vcentered'>
       <div className='column'>
-        <Image
-        src="https://storage.googleapis.com/fabmaster/media/images/U-WTR98.width-450.png"
-        alt="Head Jab"
-        width={446}
-        height={624}
-        />
+        { image('Head Jab', 'U-WTR98') }
       </div>
       <div className="column is-narrow">
         { arrow }
       </div>
       <div className='column'>
-        <Image
-        src="https://storage.googleapis.com/fabmaster/media/images/U-WTR95.width-450.png"
-        alt="Open the Center"
-        width={446}
-        height={624}
-        />
+        { image('Open the Center', 'U-WTR95') }
       </div>
       <div className="column is-narrow">
         { arrow }
       </div>
       <div className='column'>
-        <Image
-        src="https://storage.googleapis.com/fabmaster/media/images/U-WTR86.width-450.png"
-        alt="Fluster Fist"
-        width={446}
-        height={624}
-        />
+        { image('Fluster Fist', 'U-WTR86') }
+      </div>
+      <div className="column is-narrow">
+        { noArrow }
       </div>
       <div className='column'>
-        <Image
-        src="https://storage.googleapis.com/fabmaster/media/images/U-WTR85.width-450.png"
-        alt="Pounding Gale"
-        width={446}
-        height={624}
-        />
+        { image('Pounding Gale', 'U-WTR85') }
       </div>
     </div>
   </div>
@@ -59,42 +59,27 @@ const legCombo = (
     <div className='container'>
       <div className='columns is-vcentered'>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR101.width-450.png"
-          alt="Leg Tap"
-          width={446}
-          height={624}
-          />
+          { image('Leg Tap', 'U-WTR101') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR104.width-450.png"
-          alt="Rising Knee Thrust"
-          width={446}
-          height={624}
-          />
+          { image('Rising Knee Thrust', 'U-WTR104') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR89.width-450.png"
-          alt="Blackout Kick"
-          width={446}
-          height={624}
-          />
+          { image('Blackout Kick', 'U-WTR89') }
+        </div>
+        <div className="column is-narrow">
+          <span class="icon is-large" style={{width: '2em'}}>
+            <i class="fa-3x"></i>
+          </span>
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR84.width-450.png"
-          alt="Hurricane Technique"
-          width={446}
-          height={624}
-          />
+          { image('Hurricane Technique', 'U-WTR84') }
         </div>
       </div>
     </div>
@@ -106,45 +91,25 @@ const windCombo = (
     <div className='container'>
       <div className='columns is-vcentered'>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR107.width-450.png"
-          alt="Surging Strike"
-          width={446}
-          height={624}
-          />
+          { image('Surging Strike', 'U-WTR107') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR110.width-450.png"
-          alt="Whelming Gustwave"
-          width={446}
-          height={624}
-          />
+          { image('Whelming Gustwave', 'U-WTR110') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR83.width-450.png"
-          alt="Mugenshi: RELEASE"
-          width={446}
-          height={624}
-          />
+          { image('Mugenshi: RELEASE', 'U-WTR83') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/U-WTR81.width-450.png"
-          alt="Lord of Wind"
-          width={446}
-          height={624}
-          />
+          { image('Lord of Wind', 'U-WTR81') }
         </div>
       </div>
     </div>
@@ -156,42 +121,25 @@ const waterCombo = (
     <div className='container'>
       <div className='columns is-vcentered'>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU69.width-450.png"
-          alt="Torrent of Tempo"
-          width={446}
-          height={624}
-          />
+          { image('Torrent of Tempo', 'CRU69') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU60.width-450.png"
-          alt="Rushing River"
-          width={446}
-          height={624}
-          />
+          { image('Rushing River', 'CRU60') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU55.width-450.png"
-          alt="Flood of Force"
-          width={446}
-          height={624}
-          />
+          { image('Flood of Force', 'CRU55') }
+        </div>
+        <div className="column is-narrow">
+          { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU55.width-450.png"
-          alt="Flood of Force"
-          width={446}
-          height={624}
-          />
+          { image('Flood of Force', 'CRU55') }
         </div>
       </div>
     </div>
@@ -203,42 +151,25 @@ const zenCombo = (
     <div className='container'>
       <div className='columns is-vcentered'>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU66.width-450.png"
-          alt="Soulbead Strike"
-          width={446}
-          height={624}
-          />
+          { image('Soulbead Strike', 'CRU66') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU57.width-450.png"
-          alt="Crane Dance"
-          width={446}
-          height={624}
-          />
+          { image('Crane Dance', 'CRU57') }
         </div>
         <div className="column is-narrow">
           { arrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU54.width-450.png"
-          alt="Find Center"
-          width={446}
-          height={624}
-          />
+          { image('Find Center', 'CRU54') }
+        </div>
+        <div className="column is-narrow">
+          { noArrow }
         </div>
         <div className='column'>
-          <Image
-          src="https://storage.googleapis.com/fabmaster/media/images/CRU56.width-450.png"
-          alt="Heron's Flight"
-          width={446}
-          height={624}
-          />
+          { image('Heron\'s Flight', 'CRU56') }
         </div>
       </div>
     </div>
