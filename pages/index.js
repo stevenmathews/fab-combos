@@ -2,14 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 const arrow = (
-  <span class="icon is-large" style={{width: '2em'}}>
-    <i class="fas fa-3x fa-angle-right"></i>
+  <span className="icon is-large" style={{width: '2em'}}>
+    <i className="fas fa-3x fa-angle-right"></i>
   </span>
 )
 
 const noArrow = (
-  <span class="icon is-large" style={{width: '2em'}}>
-    <i class="fa-3x"></i>
+  <span className="icon is-large" style={{width: '2em'}}>
+    <i className="fa-3x"><strong>or</strong></i>
   </span>
 )
 
@@ -27,6 +27,7 @@ function image (alt, version) {
 const headCombo = (
   <div className='section'>
   <div className='container'>
+    <h2 className='title is-2 has-text-centered'>Head</h2>
     <div className='columns is-vcentered'>
       <div className='column'>
         { image('Head Jab', 'U-WTR98') }
@@ -57,6 +58,7 @@ const headCombo = (
 const legCombo = (
   <div className='section'>
     <div className='container'>
+      <h2 className='title is-2 has-text-centered'>Leg</h2>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Leg Tap', 'U-WTR101') }
@@ -74,9 +76,7 @@ const legCombo = (
           { image('Blackout Kick', 'U-WTR89') }
         </div>
         <div className="column is-narrow">
-          <span class="icon is-large" style={{width: '2em'}}>
-            <i class="fa-3x"></i>
-          </span>
+          { noArrow }
         </div>
         <div className='column'>
           { image('Hurricane Technique', 'U-WTR84') }
@@ -89,6 +89,7 @@ const legCombo = (
 const windCombo = (
   <div className='section'>
     <div className='container'>
+      <h2 className='title is-2 has-text-centered'>Wind</h2>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Surging Strike', 'U-WTR107') }
@@ -119,6 +120,7 @@ const windCombo = (
 const waterCombo = (
   <div className='section'>
     <div className='container'>
+      <h2 className='title is-2 has-text-centered'>Water</h2>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Torrent of Tempo', 'CRU69') }
@@ -149,6 +151,7 @@ const waterCombo = (
 const zenCombo = (
   <div className='section'>
     <div className='container'>
+      <h2 className='title is-2 has-text-centered'>Zen</h2>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Soulbead Strike', 'CRU66') }
@@ -191,6 +194,21 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className='columns is-vcentered is-mobile' style={{  
+          backgroundImage: "url(" + "https://storage.googleapis.com/fabmaster/media/images/misteria_matte_OaexQzi.width-2000.jpg" + ")",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          overflow: 'hidden',
+          height: '40vh',
+          width: '100%',
+          position: 'relative',
+          opacity: '0.75',
+        }}>
+          <div className='column'>
+            <h1 className='title is-1 has-text-white has-text-centered'>Ninja</h1>
+          </div>
+        </div>
         { headCombo }
         <hr></hr>
         { legCombo }
@@ -201,6 +219,13 @@ export default function Home() {
         <hr></hr>
         { zenCombo }
       </main>
+      <footer className='section'>
+        <div className='container'>
+          <p className='has-text-centered'>
+            <a href='https://fabtcg.com/'>Flesh and Blood™</a> and all associated images are copyright © <a href='https://legendstory.com/'>Legend Story Studios</a>. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
