@@ -9,7 +9,7 @@ const arrow = (
 
 const noArrow = (
   <span className="icon is-large" style={{width: '2em'}}>
-    <i className="fa-3x"><strong>or</strong></i>
+    <i className="fa-3x">or</i>
   </span>
 )
 
@@ -27,7 +27,7 @@ function image (alt, version) {
 const headCombo = (
   <div className='section'>
   <div className='container'>
-    <h2 className='title is-2 has-text-centered'>Head</h2>
+    <h3 className='title is-3 has-text-centered'>Head</h3>
     <div className='columns is-vcentered'>
       <div className='column'>
         { image('Head Jab', 'U-WTR98') }
@@ -58,7 +58,7 @@ const headCombo = (
 const legCombo = (
   <div className='section'>
     <div className='container'>
-      <h2 className='title is-2 has-text-centered'>Leg</h2>
+      <h3 className='title is-3 has-text-centered'>Leg</h3>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Leg Tap', 'U-WTR101') }
@@ -89,7 +89,7 @@ const legCombo = (
 const windCombo = (
   <div className='section'>
     <div className='container'>
-      <h2 className='title is-2 has-text-centered'>Wind</h2>
+      <h3 className='title is-3 has-text-centered'>Wind</h3>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Surging Strike', 'U-WTR107') }
@@ -120,7 +120,7 @@ const windCombo = (
 const waterCombo = (
   <div className='section'>
     <div className='container'>
-      <h2 className='title is-2 has-text-centered'>Water</h2>
+      <h3 className='title is-3 has-text-centered'>Water</h3>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Torrent of Tempo', 'CRU69') }
@@ -151,7 +151,7 @@ const waterCombo = (
 const zenCombo = (
   <div className='section'>
     <div className='container'>
-      <h2 className='title is-2 has-text-centered'>Zen</h2>
+      <h3 className='title is-3 has-text-centered'>Zen</h3>
       <div className='columns is-vcentered'>
         <div className='column'>
           { image('Soulbead Strike', 'CRU66') }
